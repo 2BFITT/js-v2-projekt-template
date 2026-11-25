@@ -1,96 +1,69 @@
-# Mein Arbeitsrepo — JavaScript V2
+# JavaScript V2 — Aufgaben-Template
 
-Deine persönliche Sammelstelle für den Kurs: **Labs, Übungen, Screenshots, Projekte und dein Abschlussprojekt** entstehen alle in diesem Repository — jede Aufgabe nach demselben Muster.
+Dieses Template ist die Startvorlage für **jede einzelne Aufgabe** im Kurs: jedes Lab, jede Übung, jedes Projekt und das Abschlussprojekt bekommen **ein eigenes, privates Repository** — angelegt von deinem persönlichen GitHub-Account, mit deiner Lehrkraft als eingeladenem Mitglied.
 
 ---
 
-## Erst mal ganz einfach: Was ist das hier?
+## Erst mal ganz einfach: Wie das funktioniert
 
 - **GitHub** ist ein Speicherort im Internet für Code. Wie ein Ordner, nur online.
 - Ein **Repository** (kurz „Repo") ist so ein Ordner mit deinen Dateien und deren Änderungshistorie.
-- Ein **Template** (Vorlage) ist ein Repo, aus dem man sich Kopien macht. **Dieses Repo ist die Vorlage.**
-- Deine Kopie davon ist **dein Arbeitsrepo**. Nur du arbeitest darin — die Vorlage bleibt unberührt.
+- Dieses Repo ist ein **Template** (Vorlage). Du machst dir davon für jede Aufgabe eine eigene Kopie.
+- **Privat** heißt: Nur du und die Lehrkraft können das Repo sehen.
+- Deine Lehrkraft wird bei jedem Repo als **Collaborator** (Mitglied) eingeladen — so kann sie deine Arbeit anschauen und Feedback geben.
 
 ---
 
-## Schritt für Schritt: Dein Arbeitsrepo anlegen (einmalig)
+## Einmalig zu Beginn des Kurses
 
-1. **Bei GitHub einloggen.** (Account noch nicht vorhanden? Auf github.com kostenlos registrieren — Benutzername, E-Mail, Passwort.)
-2. **Die Vorlage öffnen** — du bist ja schon hier. 😊
-3. **Oben rechts auf den grünen Knopf „Use this template"** klicken, dann **„Create a new repository"**.
-4. **Repository-Name eintragen**, z. B. `js-v2-arbeit-anna` oder `js-v2-meine-arbeit`.
-5. **„Public"** (öffentlich) wählen — so kann die Lehrkraft deine Arbeit sehen, ohne Zugang beantragen zu müssen.
-6. Auf **„Create repository"** klicken. **Fertig — das ist jetzt dein Arbeitsrepo.**
-
-&gt; **Merke:** Der „Use this template"-Knopf macht eine **eigenständige Kopie**. Du kannst alles ändern, ohne die Vorlage anzufassen. Und einmal angelegt, sammelt dein Repo den ganzen Kurs über alles.
+1. **GitHub-Account anlegen** (falls noch nicht vorhanden): Auf github.com registrieren — am besten mit deiner **Schul-E-Mail** und einem Benutzernamen, der dich erkennbar macht (z. B. Vorname + erster Buchstabe Nachname, alles klein, keine Umlaute).
+2. Deine Lehrkraft teilt dir den GitHub-Benutzernamen mit, den du einladen musst: **`2BFITT`**.
 
 ---
 
-## So arbeitest du damit
+## Für JEDE Aufgabe: Repo aus dem Template anlegen (immer gleich)
 
-### 1. Repo auf deinen Rechner holen
-In deinem Repo auf **„Code" → „Download ZIP"** klicken und entpacken. Den Ordner in VS Code öffnen.
+1. **Diese Vorlage öffnen** und oben rechts auf den grünen Knopf **„Use this template" → „Create a new repository"** klicken.
+2. **Repository-Name nach dem Schema eintragen:**
+   - `js-v2-lab-01-vorname` (Lab 1, 2, 3 …)
+   - `js-v2-uebung-01-vorname` (Übungen)
+   - `js-v2-projekt-1-vorname` (Projekte)
+   - `js-v2-abschluss-vorname` (Abschlussprojekt)
+3. **„Private"** (privat) wählen — nicht Public!
+4. **„Create repository"** — fertig, das ist jetzt dein Arbeitsrepo für diese Aufgabe.
+5. **Lehrkraft einladen:** In deinem neuen Repo auf **Settings → Collaborators** → **„Add people"** → den Benutzernamen der Lehrkraft (`2BFITT`) eingeben → Rolle **Write** → hinzufügen.
+   ⚠️ **Die Einladung muss für jedes neue Repo neu erfolgen** — sie gilt nicht automatisch für das nächste.
+6. **Code auf deinen Rechner holen:** **Code → Download ZIP** → entpacken → in VS Code öffnen. (Wer mag: `git clone`.)
 
-### 2. Für jede neue Aufgabe: einen Ordner nach demselben Muster
-Pro Lab, Übung oder Projekt legst du einen eigenen Ordner an:
-
-​```
-js-v2-arbeit-anna/
-├── index.html                  ← deine Übersichtsseite (Hub)
-├── css/ style.css              ← deine Stile
-├── js/ app.js                  ← dein JavaScript
-├── labs/
-│   ├── lab-01-variablen/
-│   │   ├── index.html          ← jede Aufgabe bekommt ihre eigene index.html
-│   │   └── ...
-│   └── lab-02-bedingungen/
-├── uebungen/
-│   └── uebung-01/
-├── screenshots/                ← Belege & Zwischenstände als Bilder
-├── projekte/
-│   └── projekt-1/
-└── abschlussprojekt/
-​```
-
-- Jede Aufgabe bekommt **ihre eigene `index.html`** — aufgebaut wie die Übersichtsseite: HTML-Grundgerüst, CSS verlinkt, JavaScript mit `defer` im Head.
-- Auf der **Übersichtsseite** (`index.html` im Hauptordner) trägst du jedes Mal einen Link zu deiner neuen Aufgabe ein (Beispiel steht als Kommentar im Code).
-- **Screenshots** kommen in den `screenshots/`-Ordner — z. B. als Beleg, dass dein Code läuft.
-
-### 3. Zwischenstände sichern
-Immer wenn etwas funktioniert: Änderungen **committen** („Commit changes" — kurzer Satz, was du gemacht hast). So kann nichts verloren gehen und die Lehrkraft sieht deine Fortschritte.
-
-### 4. Im Browser prüfen
-`index.html` in VS Code mit der **Live-Server-Erweiterung** öffnen — jede Änderung siehst du sofort.
-
-### 5. Veröffentlichen (für das Abschlussprojekt)
-Repo → **Settings → Pages → Source: „Deploy from a branch"** → Branch `main`, Folder `/ (root)` → Save. Nach 1–2 Minuten läuft dein Projekt unter `https://&lt;dein-benutzername&gt;.github.io/&lt;dein-repo&gt;/`.
+&gt; **Merke:** Die Vorlage selbst wird nie verändert. Du arbeitest ausschließlich in deinen eigenen Kopien.
 
 ---
 
-## Die Projekte (ab Kapitel 11)
+## So arbeitest du in deinem Aufgaben-Repo
 
-Du wählst aus dem **Katalog** oder reichst ein **Eigenprojekt** ein:
+1. **Die Aufgabenstellung** findest du im Tutorial: https://www.pantam.at/tutorials/js-classic-v2/
+2. In der `index.html` **Titel und Überschrift** anpassen (z. B. „Lab 01 — Variablen").
+3. **Schrittweise bauen** — HTML, CSS, JavaScript sauber getrennt. JavaScript kommt mit `defer` in den Head (so wie in der Vorlage).
+4. **Im Browser prüfen:** `index.html` mit der **Live-Server-Erweiterung** in VS Code öffnen.
+5. **Zwischenstände sichern:** Immer wenn etwas funktioniert, **committen** („Commit changes" + kurzer Satz, was du gemacht hast).
+6. **Screenshots** als Beleg in den Ordner `screenshots/` legen (z. B. „handy-test.png").
+7. **Fertig?** Sag der Lehrkraft Bescheid — sie schaut in deinem Repo nach.
 
-1. **Highscore-Spiel** — Browser-Spiel mit Punktezählung und Highscore-Liste
-2. **Formular-Meister** — mehrstufiges Formular mit Live-Validierung
-3. **Sicherheits-Audit** — Demoseite mit typischen Web-Schwachstellen
-4. **Eigenantrag** — deine Idee (kurz beschreiben und absegnen lassen)
+---
 
-### Anforderungen (Mindeststandard)
+## Was ist mit dem Veröffentlichen (GitHub Pages)?
 
-- Mindestens **2 JavaScript-Features** (z. B. Validierung, Local Storage, dynamisches Rendern)
-- Saubere Trennung: HTML (Inhalt), CSS (Gestaltung), JS (Verhalten)
-- **Responsive**: funktioniert am Handy (ab 360 px) und am Desktop
-- Veröffentlicht mit **GitHub Pages**
+Private Repositories kann man im kostenlosen Tarif **nicht** öffentlich über GitHub Pages veröffentlichen. Deine Lehrkraft sieht dein Ergebnis direkt im Repo — das reicht fürs Beurteilen. Falls du ein Projekt zusätzlich öffentlich zeigen willst, sprich das mit der Lehrkraft ab.
 
 ---
 
 ## Gute Gewohnheiten
 
+- **Ein Repo pro Aufgabe** — nie mehrere Aufgaben in einem Repo mischen.
+- Ordner- und Dateinamen klein, mit Bindestrichen: `screenshots/handy-test.png`, nicht `Screenshots/Handy Test!`.
 - Keine fremden Bilder ohne Quellenangabe, keine personenbezogenen Daten.
-- Ordner- und Dateinamen klein, mit Bindestrichen: `lab-01-variablen`, nicht `Lab 01 Variablen!`.
-- Teste am Handy (Browser-Entwicklerwerkzeuge → Geräte-Emulation 360 px).
-- Fragen? Das Tutorial: https://www.pantam.at/tutorials/js-classic-v2/
+- **Regelmäßig committen** — kleine, funktionierende Zwischenstände schlagen seltene Groß-Commits.
+- Teste am Handy (Browser-Entwicklerwerkzeuge → Geräte-Emulation, 360 px).
 
 ## Lizenz
 
